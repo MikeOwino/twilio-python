@@ -3,6 +3,132 @@ twilio-python Changelog
 
 Here you can see the full list of changes between each twilio-python release.
 
+[2025-02-20] Version 9.4.6
+--------------------------
+**Library - Chore**
+- [PR #842](https://github.com/twilio/twilio-python/pull/842): issue 841. Thanks to [@manisha1997](https://github.com/manisha1997)!
+
+**Flex**
+- Adding Digital Transfers APIs under v1/Interactions
+
+**Numbers**
+- Convert webhook_type to ienum type in v1/Porting/Configuration/Webhook/{webhook_type}
+
+**Trusthub**
+- Changing TrustHub SupportingDocument status enum from lowercase to uppercase since kyc-orch returns status capitalized and rest proxy requires strict casing
+
+
+[2025-02-11] Version 9.4.5
+--------------------------
+**Api**
+- Change downstream url and change media type for file `base/api/v2010/validation_request.json`.
+
+**Intelligence**
+- Add json_results for Generative JSON operator results
+
+**Messaging**
+- Add DestinationAlphaSender API to support Country-Specific Alpha Senders
+
+**Video**
+- Change codec type from enum to case-insensitive enum in recording and room_recording apis
+
+
+[2025-01-28] Version 9.4.4
+--------------------------
+**Library - Fix**
+- [PR #822](https://github.com/twilio/twilio-python/pull/822): Fix for 10 vulnerabilities. Thanks to [@twilio-product-security](https://github.com/twilio-product-security)!
+
+**Library - Chore**
+- [PR #834](https://github.com/twilio/twilio-python/pull/834): update httpclient. Thanks to [@manisha1997](https://github.com/manisha1997)!
+- [PR #837](https://github.com/twilio/twilio-python/pull/837): enable newer versions of aiohttp-retry. Thanks to [@tiwarishubham635](https://github.com/tiwarishubham635)!
+- [PR #833](https://github.com/twilio/twilio-python/pull/833): created bug report issue template. Thanks to [@sbansla](https://github.com/sbansla)!
+
+**Api**
+- Add open-api file tag to `conference/call recordings` and `recording_transcriptions`.
+
+**Events**
+- Add support for subaccount subscriptions (beta)
+
+**Insights**
+- add new region to conference APIs
+
+**Lookups**
+- Add new `parnter_sub_id` query parameter to the lookup request
+
+
+[2025-01-13] Version 9.4.3
+--------------------------
+**Messaging**
+- Adds validity period Default value in service resource documentation
+
+
+[2025-01-09] Version 9.4.2
+--------------------------
+**Library - Chore**
+- [PR #832](https://github.com/twilio/twilio-python/pull/832): remove test for 3.7. Thanks to [@tiwarishubham635](https://github.com/tiwarishubham635)!
+
+**Numbers**
+- Change beta feature flag to use v2/BulkHostedNumberOrders
+
+
+[2024-12-13] Version 9.4.1
+--------------------------
+**Library - Fix**
+- [PR #827](https://github.com/twilio/twilio-python/pull/827): Fixing init file for preview iam domain. Thanks to [@AsabuHere](https://github.com/AsabuHere)!
+
+**Library - Chore**
+- [PR #826](https://github.com/twilio/twilio-python/pull/826): fix orgs api changes. Thanks to [@tiwarishubham635](https://github.com/tiwarishubham635)!
+
+
+[2024-12-12] Version 9.4.0
+--------------------------
+**Library - Feature**
+- [PR #825](https://github.com/twilio/twilio-python/pull/825): Docs update and examples for organization api uptake and public oauth. Thanks to [@AsabuHere](https://github.com/AsabuHere)!
+- [PR #815](https://github.com/twilio/twilio-python/pull/815): Organizations Api uptake for twilio-python. Thanks to [@AsabuHere](https://github.com/AsabuHere)!
+
+
+[2024-12-05] Version 9.3.8
+--------------------------
+**Api**
+- Add optional parameter `intelligence_service` to `transcription`
+- Updated `phone_number_sid` to be populated for sip trunking terminating calls.
+
+**Numbers**
+- Add Update Hosted Number Order V2 API endpoint
+- Update Port in docs
+
+**Twiml**
+- Add optional parameter `intelligence_service` to `<Transcription>`
+- Add support for new `<ConversationRelay>` and `<Assistant>` noun
+- Add `events` attribute to `<Dial>` verb
+
+
+[2024-11-15] Version 9.3.7
+--------------------------
+**Library - Chore**
+- [PR #819](https://github.com/twilio/twilio-python/pull/819): use older verison of aiohttp_retry. Thanks to [@sbansla](https://github.com/sbansla)!
+
+**Api**
+- Added `ivr-virtual-agent-custom-voices` and `ivr-virtual-agent-genai` to `usage_record` API.
+- Add open-api file tag to realtime_transcriptions
+
+**Taskrouter**
+- Add `api-tag` property to workers reservation
+- Add `api-tag` property to task reservation
+
+
+[2024-10-25] Version 9.3.6
+--------------------------
+**Library - Chore**
+- [PR #818](https://github.com/twilio/twilio-python/pull/818): removing unavailable references from init files. Thanks to [@tiwarishubham635](https://github.com/tiwarishubham635)!
+
+
+[2024-10-24] Version 9.3.5
+--------------------------
+**Conversations**
+- Expose ConversationWithParticipants resource that allows creating a conversation with participants
+
+
 [2024-10-17] Version 9.3.4
 --------------------------
 **Api**
